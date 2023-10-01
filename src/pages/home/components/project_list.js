@@ -15,28 +15,51 @@ const Project_list = () => {
   }, []);
 
   return (
-    <div>
-      Data from project end point : -{data ? <>{data.length} </> : "No data"}
-      <ul>
-        <h1>List of pROJECTS</h1>
-
+    <div className="main-project-box">
+      <h1 className="project-heading">Past Work</h1>
+      <div className="main-project-box-item">
         {data.map((project, index) => (
-          <li key={index}>
-            <h2>{project.name}</h2>
-            <p>
-              Link:{" "}
-              <a href={project.link} target="_blank" rel="noopener noreferrer">
-                {project.link}
+          // -------------
+          <div className="project-item" key={index}>
+            <div className="project-cat">
+              <div className="cat-box">{project.category}</div>
+            </div>
+            <img
+              className="project-image"
+              src={project.cover_image}
+              alt={project.name}
+            />
+            <div className="project-name">
+              <p className="project-name-text">{project.name}</p>
+            </div>
+            <div className="project-short-desc">
+              <p className="project-short-desc-text">{project.short_des}</p>
+            </div>
+            <div className="project-link">
+              <a
+                href={project.link}
+                target="_blank"
+                className="project-link-box"
+              >
+                Visit Site
               </a>
-            </p>
-            <img src={project.cover_image} alt={project.name} />
-            <p>Short Description: {project.short_des}</p>
-            <p>Long Description: {project.long_des}</p>
-            <p>Category: {project.category}</p>
-            <p>Created At: {project.created_at}</p>
-          </li>
+            </div>
+
+            {/* <h2>{project.name}</h2>
+          <p>
+            Link:{" "}
+            <a href={project.link} target="_blank" rel="noopener noreferrer">
+              {project.link}
+            </a>
+          </p>
+          <img src={project.cover_image} alt={project.name} />
+          <p>Short Description: {project.short_des}</p>
+          <p>Long Description: {project.long_des}</p>
+          <p>Category: {project.category}</p>
+          <p>Created At: {project.created_at}</p> */}
+          </div>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };

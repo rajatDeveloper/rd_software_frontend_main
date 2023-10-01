@@ -2,6 +2,7 @@ import axios from "axios";
 import {
   baseUrl,
   clientUrl,
+  contactUrl,
   feedbackUrl,
   projectUrl,
 } from "../../utils/api_const";
@@ -24,4 +25,10 @@ const getAllFeedBacks = async () => {
   return res.data;
 };
 
-export { getAllProjects, getAllClientData, getAllFeedBacks };
+const postData = async (data) => {
+  const res = await axios.post(baseUrl + contactUrl, data);
+
+  return res.data;
+};
+
+export { getAllProjects, getAllClientData, getAllFeedBacks, postData };

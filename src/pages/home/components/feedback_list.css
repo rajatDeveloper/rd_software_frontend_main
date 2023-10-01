@@ -1,0 +1,25 @@
+.feedback-main-item-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+
+
+.feedback-image{
+    width: 100%;
+    height: 200px;
+}
+
+.feedback-heading{
+    text-align: center;
+    background-color: aquamarine;
+}
+
+.feedback-item{
+    border-radius: 50px;
+    background-color: rgba(241,76,69,255) ;
+    width: 400px;
+    margin-top: 30px;
+}

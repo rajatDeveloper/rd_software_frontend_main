@@ -4,6 +4,7 @@ import {
   getAllFeedBacks,
 } from "../../../service/home/home_service";
 import React, { useEffect, useState } from "react";
+import "./client_list.css";
 
 const ClientList = () => {
   const [data, setData] = useState([]);
@@ -17,19 +18,21 @@ const ClientList = () => {
     handle();
   }, []);
   return (
-    <div>
-      Data from client end point : -{data ? <>{data.length} </> : "No data"}\
-      <div>
-        <h1>List of Clients</h1>
-        <ul>
-          {data.map((client, index) => (
-            <li key={index}>
-              <h2>{client.company_name}</h2>
-              <img src={client.cover_image} alt={client.company_name} />
-              <p>Short Description: {client.short_des}</p>
-            </li>
-          ))}
-        </ul>
+    <div className="client-main-box">
+      <h1 className="client-heading">Our Clients</h1>
+
+      <div className="client-item-box">
+        {data.map((client, index) => (
+          <div className="client-item" key={index}>
+            <h2>{client.company_name}</h2>
+            <img
+              className="client-image"
+              src={client.cover_image}
+              alt={client.company_name}
+            />
+            <p className="client-text">Short Description: {client.short_des}</p>
+          </div>
+        ))}
       </div>
     </div>
   );
