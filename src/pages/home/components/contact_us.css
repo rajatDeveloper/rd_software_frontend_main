@@ -1,0 +1,69 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px;
+  /* added a light gray background */
+   /* added a subtle shadow */
+}
+
+.form-container {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  width: 45%;
+  background-color: #fff; /* added a white background */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* added a subtle shadow */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold; /* added bold font weight */
+  color: red; /* added a darker text color */
+}
+
+h2 {
+  margin-bottom: 10px;
+  font-weight: bold; /* added bold font weight */
+  color: #666; /* added a darker text color */
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold; /* added bold font weight */
+  color: #666; /* added a darker text color */
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box; /* added box-sizing to make inputs look better */
+}
+
+textarea {
+  height: 100px;
+  resize: vertical; /* added resize property to make textarea resizable */
+}
+
+button {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  width:100%;
+  height: 50px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.2s ease; /* added transition effect */
+}
+
+button:hover {
+  background-color: #45a049;
+}
+

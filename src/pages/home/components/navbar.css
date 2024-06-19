@@ -1,0 +1,24 @@
+/* src/components/Navbar.css */
+.navbar {
+  
+    font-size: 26px;
+    font-weight: 500;
+ 
+}
+.navbar-reddish {
+    background-color: #ffffff; /* Dark red color */
+  
+}
+.nav-item a{
+    margin-left:80px;
+}
+/* src/components/Navbar.css */
+.navBarLogo{
+    margin-left: 10px;
+}
+
+
+
+.navbar-reddish .nav-link:hover {
+    color: #ff3700; /* Optional: Change link color on hover to something like gold */
+}

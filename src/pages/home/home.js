@@ -6,7 +6,9 @@ import logo from "../../../src/assets/images/logo-no-background.png";
 import banner_image from "../../../src/assets/images/banner_image.png";
 import { postData } from "../../service/home/home_service";
 import "./home.css";
-
+import Navbar from "./components/navbar";
+import { Particles } from 'react-tsparticles';
+import ContactForm from "./components/contact_us";
 const Home = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -28,33 +30,38 @@ const Home = () => {
     <div>
       <div className="mainHome">
         {/* //nav bar  */}
-        <div className="navBarMain">
+        <Navbar />
+        {/* <div className="navBarMain">
           <img className="navBarLogo" src={logo} />
-        </div>
+        </div> */}
         {/* //banner container  */}
+        
         <div className="bannerMainBox">
+          
           <div className="banner-box-1">
             <p className="banner-text">
-              Experience innovation at its finest with our tech company. We
-              specialize in crafting dynamic web, Android, and iOS apps,
+              Experience innovation at its finest with our tech company.
+             We specialize in crafting dynamic web, Android, and iOS apps,
               providing tailored solutions to transform your digital presence
               and exceed your expectations
             </p>
             <button className="banner-button">Book a FREE assessement</button>
           </div>
-          <div className="banner-box-2">
+          
+          {/* <div className="banner-box-2">
             <img className="banner-image" src={banner_image} />
-          </div>
+          </div> */}
         </div>
 
         <Project_list />
 
         <ClientList />
         <FeedBackList />
+        <ContactForm />
 
         {/* -------------- */}
         {/* connect us code  */}
-        <div className="contact-us-box">
+        {/* <div className="contact-us-box">
           <h1 className="contact-us-heading">Contact Us</h1>
           <input
             type="text"
@@ -89,7 +96,7 @@ const Home = () => {
             {" "}
             Send Data{" "}
           </button>
-        </div>
+        </div> */}
 
         {/* -------------- */}
       </div>

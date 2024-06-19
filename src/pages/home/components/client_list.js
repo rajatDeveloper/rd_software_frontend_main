@@ -24,13 +24,13 @@ const ClientList = () => {
       <div className="client-item-box">
         {data.map((client, index) => (
           <div className="client-item" key={index}>
-            <h2>{client.company_name}</h2>
+            <h2>{client.company_name}k</h2>
             <img
               className="client-image"
               src={client.cover_image}
               alt={client.company_name}
             />
-            <p className="client-text">Short Description: {client.short_des}</p>
+            <p className="client-text">{client.short_des}</p>
           </div>
         ))}
       </div>
