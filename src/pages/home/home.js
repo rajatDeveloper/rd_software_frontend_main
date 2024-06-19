@@ -11,6 +11,12 @@ import ContactForm from "./components/contact_us";
 import Footer from "./components/footer";
 
 const Home = () => {
+  const scrollToContactForm = () => {
+    const element = document.getElementById("contact");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <div>
       <div className="mainHome">
@@ -26,7 +32,9 @@ const Home = () => {
               providing tailored solutions <br />
               to transform your digital presence and exceed your expectations
             </p>
-            <button className="banner-button">Contact Us</button>
+            <button className="banner-button" onClick={scrollToContactForm}>
+              Contact Us
+            </button>
           </div>
         </div>
 
