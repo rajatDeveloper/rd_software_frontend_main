@@ -1,39 +1,33 @@
 .container {
   display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
-  /* added a light gray background */
-   /* added a subtle shadow */
 }
 
 .form-container {
   border: 1px solid #ccc;
   padding: 20px;
   border-radius: 5px;
-  width: 45%;
-  background-color: #fff; /* added a white background */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* added a subtle shadow */
+  width: 100%;
+  max-width: 600px; /* Set a maximum width for the form */
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
   text-align: center;
   margin-bottom: 20px;
-  font-weight: bold; /* added bold font weight */
-  color: red; /* added a darker text color */
-}
-
-h2 {
-  margin-bottom: 10px;
-  font-weight: bold; /* added bold font weight */
-  color: #666; /* added a darker text color */
+  font-weight: bold;
+  color: red;
 }
 
 label {
   display: block;
   margin-bottom: 5px;
-  font-weight: bold; /* added bold font weight */
-  color: #666; /* added a darker text color */
+  font-weight: bold;
+  color: #666;
 }
 
 input,
@@ -43,12 +37,12 @@ textarea {
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 3px;
-  box-sizing: border-box; /* added box-sizing to make inputs look better */
+  box-sizing: border-box;
 }
 
 textarea {
   height: 100px;
-  resize: vertical; /* added resize property to make textarea resizable */
+  resize: vertical;
 }
 
 button {
@@ -56,14 +50,25 @@ button {
   color: white;
   padding: 10px 20px;
   border: none;
-  width:100%;
+  width: 100%;
   height: 50px;
   border-radius: 3px;
   cursor: pointer;
-  transition: background-color 0.2s ease; /* added transition effect */
+  transition: background-color 0.2s ease;
 }
 
 button:hover {
   background-color: #45a049;
 }
 
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row; /* Change to row layout on larger screens */
+    justify-content: space-around; /* Add space between items */
+    align-items: flex-start;
+  }
+
+  .form-container {
+    width: 45%; /* Take up 45% of the width on larger screens */
+  }
+}

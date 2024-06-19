@@ -1,45 +1,53 @@
-.client-main-box{
-    padding:10px;
+.client-main-box {
+    padding: 10px;
     border-radius: 40px;
-  
     justify-content: center;
-
-}
-.client-heading{
+  }
+  
+  .client-heading {
     text-align: center;
-    padding:10px;
+    padding: 10px;
     margin-top: 10px;
-    color:red;
-}
-
-.client-item-box{
+    color: red;
+  }
+  
+  .client-item-box {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-   
-
-}
-.client-text{
+    justify-content: center; /* Center items horizontally */
+  }
+  
+  .client-text {
     padding: 10px;
-}
-.client-item{
-  padding:20px;
-    background-color: rgb(240, 234, 235) ;
-    width: 500px;
+  }
+  
+  .client-item {
+    padding: 20px;
+    background-color: rgb(240, 234, 235);
+    max-width: 500px; /* Set maximum width for larger screens */
+    width: 100%; /* Take full width on smaller screens */
     margin-bottom: 30px;
-    border-radius:20px;
-
-}
-h2{
-    padding-top:10px;
+    border-radius: 20px;
+  }
+  
+  h2 {
+    padding-top: 10px;
     padding-left: 10px;
-     font-size: 1.5vmax;
-     font-weight: 600;
-     color:black;
-}
-.client-image{
+    font-size: 1.5vmax;
+    font-weight: 600;
+    color: black;
+  }
+  
+  .client-image {
     width: 100%;
     height: 300px;
     border-radius: 10px;
-}
-
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .client-item {
+      max-width: 100%; /* Take full width on smaller screens */
+    }
+  }
+  

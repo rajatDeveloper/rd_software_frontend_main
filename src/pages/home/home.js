@@ -8,6 +8,7 @@ import { postData } from "../../service/home/home_service";
 import "./home.css";
 import Navbar from "./components/navbar";
 import ContactForm from "./components/contact_us";
+import Footer from "./components/footer";
 
 const Home = () => {
   return (
@@ -33,6 +34,7 @@ const Home = () => {
         <ClientList />
         <FeedBackList />
         <ContactForm />
+        <Footer />
       </div>
     </div>
   );
