@@ -14,7 +14,7 @@ background: #3f006f0f;
 .main-project-box-item{
     padding:10px;
     margin-bottom: 30px;
-
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -28,10 +28,9 @@ background: #3f006f0f;
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.4);
     z-index: 1;
   }
+  
 .project-heading{
     text-align: center;
-
-
 }
 
 

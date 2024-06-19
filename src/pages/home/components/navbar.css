@@ -1,24 +1,13 @@
-/* src/components/Navbar.css */
-.navbar {
-  
-    font-size: 26px;
-    font-weight: 500;
- 
-}
-.navbar-reddish {
-    background-color: #ffffff; /* Dark red color */
-  
-}
-.nav-item a{
-    margin-left:80px;
-}
-/* src/components/Navbar.css */
-.navBarLogo{
-    margin-left: 10px;
+
+.navBarMain {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
 }
 
-
-
-.navbar-reddish .nav-link:hover {
-    color: #ff3700; /* Optional: Change link color on hover to something like gold */
+.navBarLogo {
+    height: 50px;
+    width: 200px;
+    animation: fadeIn 2s ease-in-out;
 }
