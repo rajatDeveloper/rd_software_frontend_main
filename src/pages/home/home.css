@@ -3,6 +3,7 @@
 /* Apply the font to the body */
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: black;
 }
 
 .mainHome{
