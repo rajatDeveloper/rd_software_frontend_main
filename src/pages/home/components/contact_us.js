@@ -21,7 +21,7 @@ const ContactForm = () => {
     const finalMessage = message || "NIL";
 
     try {
-      await postData({ name, email, message: finalMessage });
+      await postData({ name, email, msg: finalMessage });
       console.log("Form submitted:", { name, email, message: finalMessage });
       setShowModal(true);
     } catch (error) {
